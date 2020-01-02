@@ -1,0 +1,41 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+[data-tabs] {
+  margin: 0 2rem;
+  align-self: center;
+  width: 300px;
+  background: #fff;
+  border-radius: 0.8rem;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+[data-tab-list] {
+  background: #f6f6f7;
+  display: flex;
+}
+
+[data-tab] {
+  padding: 1rem 1.5rem;
+  border: none;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+[data-tab][aria-selected="true"],
+[data-tab].active {
+  color: var(--accent);
+  background: white;
+}
+
+[data-tab].disabled {
+  opacity: 0.25;
+}
+
+[data-tab-panels] {
+  padding: 1.5rem;
+}
